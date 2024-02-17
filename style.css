@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 80%;
+    padding: 10px;
+    min-height: 100vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    background-color: rgb(249, 249, 249); /* Default background color for main container */
+}
+
+.main-container.dark-mode {
+    background-color: #222; /* Dark mode background color */
+}
+
+.header {
+    margin-top: 10px;
+    height: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content > h2 {
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header-content > button {
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: black;
+    background-color: #aaa9a9;
+    width: 150px;
+    padding: 2px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.notes-list{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.note {
+	background-color: #ebe03c;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+
+}
+
+.delete-icon{
+    width: 20px;
+}
+.dark{
+    color: white;
+}
+
+.note-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.note-new{
+    background-color: #67d7cc;
+	border-radius: 10px;
+	padding: 1rem;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	white-space: pre-wrap;
+
+}
+.note-new>textarea{
+    border: none;
+    resize: none;
+    background-color: #67d7cc;
+}
+
+.note-new>textarea:focus{
+    outline: none;
+}
+
+.save{
+    background-color: rgb(214, 212, 212);
+    border: none;
+    border-radius: 15px;
+    color: black;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+}
+
+.save:hover{
+    background-color: #ededed;
+    cursor: pointer;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color:rgb(197, 197, 197);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 1.5rem ;
+}
+
+.search > input{
+    border: none;
+    background-color: rgb(197, 197, 197);
+}
+
+.search>input:focus{
+    outline: none;
+}
+
+.search-img{
+    width: 25px;
+    height: 25px;
+}
